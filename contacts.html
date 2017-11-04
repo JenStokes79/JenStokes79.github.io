@@ -48,29 +48,31 @@ body {
 }
 </style>
 
-<!--adds main picture/bio-->
+<!--adds main email form-->
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-3">
+		<div class="col-md-9">
 			<div class="panel panel-default">
-				<div class="panel-body">
-					<img src="Assets/images/Me.jpg" class="img-responsive" alt="Profile picture" id="profile">
-				</div>
-			</div>		
-		</div>
-
-			<div class="col-md-6">
-				<h2>About Me</h2>
-
-					<div class="panel panel-default">
-						<div class="panel-body">
-							<p>Hello world and welcome to my portfolio! Before you start checking out my awesome creations, let me tell you a little about myself. First, let's just get this out of the way, Star Trek! I know most coders perfer Star Wars, and I love me some Han Solo, but I'm a total trekkie. Ok, hard part out of the way... 2017 has been a challenging year for me to say the least, but I've found comfort in my new UC Berekely Ext Bootcamp! I know that sounds strange, but its chaos that I'm expecting, and that's better than chaos you're not, right? Well, a few other things about me are: I have a german shepard mix named Rocky; I've worked at Kaiser for 16 years and looking for a change; I like to meditate when I'm nervous or unsure about things; I like to travel but for some reason I keep visiting places I've already been; one day I hope to develop an app to help first responders in crisses.</p>
-							<br>
-							<br>
-						</div>	
-					</div>
+				<div class="panel-body-1">
+			
+					<h3>Contact Me</h3><br><br>
+					<form action="mailto:jenstokes707@gmail.com" method="post" enctype="text/plain">
+					Name:<br>
+					<input type="text" name="Name" class="mail"><br>
+					Email:<br>
+					<input type="text" name="Mail" class="mail"><br>
+					Message:<br>
+					<input type="text" name="Message" id="message"><br><br>
+					<input type="submit" value="Send" class="submit"><br><br>
+					<input type="reset" value="Clear" class="submit">
+					<br>
+					<br>
+					<br>
+				</div> 
 			</div>
+		</div>									
+			
 
 <!-- adds sidebar-->
 
