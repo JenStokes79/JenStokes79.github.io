@@ -1,144 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Crystal Game</title>
+	<title>Trivia Game</title>
+</head>
+	<!--links reset.css-->
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--links style.css-->
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<!--links jquery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--links javascript-->
+
+
 </head>
 
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!--Links CSS reset-->
-<link rel="stylesheet" type="text/css" href="assets/CSS/reset.css">
-
-<!--Links CSS style -->
-<link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
-
-<!-- Links google fonts -->
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-
-<!--Links the Jquery-->
- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <body>
+
 
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="title">The Crystal Counter Game</div>
-				<p>
-				Instructions:</p>
-				<p>You will begin with a random number. There are four crystals below. By clicking on the crystal you will add a specific amount of points to your total score.
-				You win the game by matching your total score to the random number, you lose the game if your total score goes above he random number.
-				The value of each crystal is hidden from you until you click on it. Each time the game starts, the game will change the value of each crystal.
-				</p>	
-			</div>
-		</div>
-		
-		<div class="row">	
-			<div class="col-md-4">
-				<br>
-				<br>
-				<br>
-				<br>
-				<h2>Random Number:</h2>
-				<div id="random-number"></div>
-			</div>	
-			<br>
-			<br>
-			<div class="col-md-8" id="crystalImages1"></div>
-		</div>
-	
-		<div class="row">
-			<div class="col-md-4">
-				<div id="Wins">Wins: </div>
-				<div id="loses">Loses: </div>
-			</div>
-					<div class="col-md-8">
-						<h3>Your Score:</h3>	
-						<div class="score"></div>	
+				<div class="page-header">
+  					<h1>CAN YOU LAUNCH THE SHUTTLE?<small></small></h1>
 					</div>
+
+					
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<br>
+					<br>
+					<div>
+						<P><button id="start" type="button" class="btn btn-default btn-lg btn-block">LAUNCH QUIZ</button></p>
+						<div class="timer"></div>
+						<span class="gameover"></span>	
+						<div class="questions">
+							<h2>1. How long is the average ISS mission?</h1>
+							<input class="choices" name="one" type="radio" id="correct1"> 6 months<br>
+							<input class="choices" name="one" type="radio" id="incorrect1"> 3 months<br>
+							<input class="choices" name="one" type="radio" id="incorrect11"> 1 year<br>
+							<input class="choices" name="one" type="radio" id="incorrect111"> 8 months<br>
+							<br>
+							<h2>2. How many combined miles has the Space Shuttle traveled (all of them in total)? </h2>
+							<input class="choices" name="two" type="radio" id="incorrect2"> 301 million miles<br>
+							<input class="choices" name="two" type="radio" id="correct2"> 513.7 million miles<br>
+							<input class="choices" name="two" type="radio" id="incorrect22"> 1 billion miles<br>
+							<input class="choices" name="two" type="radio" id="incorrect222"> 1.1 million miles<br>
+							<br>
+							<h2>3. How old is the Universe?</h2>
+							<input class="choices" name="three" type="radio" id="incorrect3"> 500 Million Million Years<br>
+							<input class="choices" name="three" type="radio" id="incorrect33"> 4.6 Billion Years<br>
+							<input class="choices" name="three" type="radio" id="correct3"> 13.8 Billion Year<br>
+							<input class="choices" name="three" type="radio" id="incorrect333"> No one really knows<br>
+							<br>
+							<h2>4. When was the first Space Shuttle Launch?</h2>
+							<input class="choices" name="four" type="radio" id="correct4"> April 12, 1981<br>
+							<input class="choices" name="four" type="radio" id="incorrect4"> June 17, 1985<br>
+							<input class="choices" name="four" type="radio" id="incorrect44"> August 27, 1985<br>
+							<input class="choices" name="four" type="radio" id="incorrect444"> January 21, 1979<br>
+							<br>
+							<h2>5. What does the shuttles 3 man engines use for fuel?</h2>
+							<input class="choices" name="five" type="radio" id="incorrect5"> Nitrous Oxide<br>
+							<input class="choices" name="five" type="radio" id="incorrect55"> Liquid methane<br>
+							<input class="choices" name="five" type="radio" id="incorrect555"> Liquid Flourine<br>
+							<input class="choices" name="five" type="radio" id="correct5"> Liquid oxygen/liquid hydrogen mixture<br>
+							<br>
+							<h2>6. What is the longest time any person has spent in space continuously?</h2>
+							<input class="choices" name="six" type="radio" id="correct6"> 180 Days<br>
+							<input class="choices" name="six" type="radio" id="incorrect6"> 34 Days<br>
+							<input class="choices" name="six" type="radio" id="incorrect66"> 437 Day<br>
+							<input class="choices" name="six" type="radio" id="incorrect666"> 365 Days<br>
+							<br>
+							<h2>7. How many pounds of thrust does it take to launch a space shuttle?</h2>
+							<input class="choices" name="seven" type="radio" id="correct7"> 7.8 million<br>
+							<input class="choices" name="seven" type="radio" id="incorrect7"> 3.4 million<br>
+							<input class="choices" name="seven" type="radio" id="incorrect77"> 600,000<br>
+							<input class="choices" name="seven" type="radio" id="incorrect777"> 780,000<br>
+							<img src="CSS/images/gameover.jpg" class="failure">
+						</div>
+				
+						<div class="end">
+							<br>
+							<br>
+							<P><button id="submit" type="button" class="btn btn-default btn-lg btn-block">SUBMIT FOR RESULTS</button></p>
+						</div>
+					<div class="results1">
+						<div class="results" id="correct"></div>
+						<div class="results" id="incorrect"></div>
+						<br>
+					</div>
+					<div class="results" id="rank"></div>
+						<div>
+							<br>
+							<br>
+							<button  id="play" type="button" class="btn btn-default btn-lg btn-block">RE-LAUNCH QUIZ</button></div>
+					</div>
+				</div>
+
+			</div>	
+
+
 			</div>
 		</div>
 	</div>
 
-	<!--javascript-->
-<script type="text/javascript">
 
-	//declaring global variables
-	var counter = 0;
- 	var numberOptions = [5, 10, 1, 25];
- 	var wins = 0;
- 	var loses = 0;
-	var randomNumber = 0;
- 
-	//starts game
-	$(document).ready(function() {  
-
-		//creates random number between 30 and 99
-     	randomNumber = Math.floor(Math.random() * 69) + 30
-     	$('#random-number').html(randomNumber);
-
- 		//for loop creates an image div for 4 number options
- 			for (var i = 0; i < numberOptions.length; i++) {
- 			var imageCrystal = $("<img>");
- 			//numberOptions.sort() changes the value of the crystal each time the game is run
- 			numberOptions.sort(function() {
-  			return .5 - Math.random();
-  			})
-
- 			//I think this works with the click event below $(".crystals")
- 			imageCrystal.addClass("crystals");
- 			//This adds all the crystal images. The CSS didnt work externally on this
- 			imageCrystal.attr("src", "assets/CSS/images/crystal"+ (i+1) + ".jpeg").css("width", 150);
- 			//The data attribute makes it so each crystal has a value, in a random array from the above for loop and .sort function
- 			imageCrystal.attr("data-crystalValue", 	numberOptions[i]);
- 			$("#crystalImages1").append(imageCrystal);
- 			};
- 
- 	//starts click event on crystals and returns a value. This refer's to the crystal being clicked
- 	$(".crystals").on("click", function(){
- 		var crystalValue = ($(this).attr("data-crystalValue"));
- 			
- 			//parseInt takes the string and returns an integer 
- 			//counter takes the crystal value and adds it together
- 			//$(".score").html(counter) returns the added score into the html so the user can see it
- 			crystalValue = parseInt(crystalValue);
- 			counter += crystalValue;
- 			$(".score").html(counter);
- 
- 				//if the counter equals the random number, the user wins. Score is kept track of using win++, then adds it to the html for the user to see
- 				//Start() will restart the game 
- 				if (counter === randomNumber) {
- 				alert("you win");
- 				wins++
- 				$("#Wins").html("Wins: " + wins)
- 				Start();
- 				
- 				//if the counter is greater than the random number, the user loses. Score is kept track of using loses++, then adds it to the html for the user to see
- 				//Start() will restart the game 
- 				} else if (counter >= randomNumber) {
- 				  alert("you lose");
- 				  loses++
- 				  $("#loses").html("Loses: " + loses) ;
- 				  Start();
- 				}
- 		})
- 
-
- 		//this function will restart the game, it clears the current score, generates a new random number, and reasigns the crystals values randomly
- 		function Start(){
- 		randomNumber = Math.floor(Math.random() * 69) + 30;
- 		counter = null;
- 		numberOptions = [5, 10, 1, 25];
- 		$(".score").html(counter);
- 		$('#random-number').html(randomNumber);
-		}
- 	
- 
-}) //end 
-  
- </script>
-
+	<script type="text/javascript" src="javascript/game.js"></script>
 </body>
 </html>
