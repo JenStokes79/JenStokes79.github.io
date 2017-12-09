@@ -1,23 +1,5 @@
-h1 {
-	font-size: 28px;
-	color: blue;
-}
-button {
-	padding: 10px;
-	font-size: 16px;
+.jumbotron {
+	text-align: center;
 }
 
-#input {
-	color: blue;
-	font-size: 24px;
-}
-.add-animals {
-	padding: 20px;
-}
 
-.gifView {
-	display: flex;
-	align-items: flex-start;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
